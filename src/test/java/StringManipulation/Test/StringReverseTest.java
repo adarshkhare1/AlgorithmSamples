@@ -1,3 +1,6 @@
+package StringManipulation.Test;
+
+import AlgorithmSamples.StringManipulation;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
