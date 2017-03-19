@@ -12,7 +12,7 @@ import java.util.LinkedList;
  */
 public class NthElementFromEnd {
     @Test
-    void nThElementFromEndBasic()
+    void nThElementFromEndBasicTest()
     {
         Integer[] testArray = new Integer[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         LinkedList<Integer> testList = GetTestList(testArray);
@@ -35,7 +35,7 @@ public class NthElementFromEnd {
 
 
     @Test
-    void nThElementFromNullList() {
+    void nThElementFromNullListTest() {
         LinkedList<Integer> testList = null;
         int nElement = 10;
         Integer result = LinkedListManipulation.GetNthElementFromEndOfTheList(testList, nElement);
@@ -47,7 +47,7 @@ public class NthElementFromEnd {
     }
 
     @Test
-    void nThElementFromListWhereIndexOutOfrange() {
+    void nThElementFromListWhereIndexOutOfrangeTest() {
         Integer[] testArray = new Integer[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         LinkedList<Integer> testList = GetTestList(testArray);
         int nElement = 20;
@@ -56,7 +56,7 @@ public class NthElementFromEnd {
     }
 
     @Test
-    void nThElementFromListWhereListIsEmpty() {
+    void nThElementFromListWhereListIsEmptyTest() {
         Integer[] testArray = new Integer[]{};
         LinkedList<Integer> testList = GetTestList(testArray);
         int nElement = 0;
