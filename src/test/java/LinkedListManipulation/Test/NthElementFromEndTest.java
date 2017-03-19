@@ -10,7 +10,7 @@ import java.util.LinkedList;
 /**
  * Created by adarshkhare on 3/19/17.
  */
-public class NthElementFromEnd {
+public class NthElementFromEndTest {
     @Test
     void nThElementFromEndBasicTest()
     {
