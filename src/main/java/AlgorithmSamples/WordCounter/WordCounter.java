@@ -109,19 +109,9 @@ public class WordCounter
     @NotNull
     private static PriorityQueue<WordFrequencyNode> GetOrderedQueueFromWordMap(Map<String, Integer> wordMap)
     {
-        PriorityQueue<WordFrequencyNode> queue
-                = new PriorityQueue<>(wordMap.size(), new Comparator<WordFrequencyNode>()
-                    {
-                        public int compare(WordFrequencyNode a, WordFrequencyNode b)
-                        {
-                            if (a.freq == b.freq) return a.str.compareTo(b.str);
-                            else return b.freq - a.freq;
-                        }
-                    });
+        PriorityQueue<WordFrequencyNode> queue = new PriorityQueue<>(wordMap.size(), new WordFrequencyNodeComparator());
         for (Map.Entry<String, Integer> entry : wordMap.entrySet())
-        {
             queue.offer(new WordFrequencyNode(entry.getKey(), entry.getValue()));
-        }
         return queue;
     }
 }
