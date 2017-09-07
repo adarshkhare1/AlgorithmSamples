@@ -1,6 +1,6 @@
-package StringManipulation.Test;
+package AlgorithmSamples.StringManipulation.Test;
 
-import AlgorithmSamples.StringManipulation;
+import AlgorithmSamples.String.StringManipulation;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -9,11 +9,10 @@ import java.util.Arrays;
 /**
  * Created by adarshkhare on 3/19/17.
  */
-
 public class ReplaceSpaceTest
 {
     @Test
-    void escapeSpaceInEmptyString() throws Exception
+    public void escapeSpaceInEmptyString() throws Exception
     {
         char[] testBuffer = getTestBuffer("", 0);
         StringManipulation.EscapeSpacesInCharBuffer(testBuffer);
@@ -23,7 +22,7 @@ public class ReplaceSpaceTest
     }
 
     @Test
-    void escapeSpaceInSingleCharString() throws Exception
+    public void escapeSpaceInSingleCharString() throws Exception
     {
         char[] testBuffer = getTestBuffer("a", 0);
         StringManipulation.EscapeSpacesInCharBuffer(testBuffer);
@@ -33,7 +32,7 @@ public class ReplaceSpaceTest
     }
 
     @Test
-    void escapeSingleCharSpace() throws Exception
+    public void escapeSingleCharSpace() throws Exception
     {
         char[] testBuffer = getTestBuffer(" ", 2);
         StringManipulation.EscapeSpacesInCharBuffer(testBuffer);
@@ -43,7 +42,7 @@ public class ReplaceSpaceTest
     }
 
     @Test
-    void escapeSpaceValidString() throws Exception
+    public void escapeSpaceValidString() throws Exception
     {
         char[] testBuffer = getTestBuffer("a b", 2);
         StringManipulation.EscapeSpacesInCharBuffer(testBuffer);
@@ -53,7 +52,7 @@ public class ReplaceSpaceTest
     }
 
     @Test
-    void escapeSpaceValidStringWithMultipleSpaces() throws Exception
+    public void escapeSpaceValidStringWithMultipleSpaces() throws Exception
     {
         char[] testBuffer = getTestBuffer("a b c", 4);
         StringManipulation.EscapeSpacesInCharBuffer(testBuffer);
@@ -63,7 +62,7 @@ public class ReplaceSpaceTest
     }
 
     @Test
-    void escapeSpaceValidStringWithAllSpaces() throws Exception
+    public void escapeSpaceValidStringWithAllSpaces() throws Exception
     {
         char[] testBuffer = getTestBuffer("   ", 6);
         StringManipulation.EscapeSpacesInCharBuffer(testBuffer);
@@ -73,7 +72,7 @@ public class ReplaceSpaceTest
     }
 
     @Test
-    void escapeSpaceValidStringINlargeBuffer() throws Exception
+    public void escapeSpaceValidStringINlargeBuffer() throws Exception
     {
         char[] testBuffer = getTestBuffer("a b c", 10);
         StringManipulation.EscapeSpacesInCharBuffer(testBuffer);

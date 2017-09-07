@@ -1,4 +1,4 @@
-package AlgorithmSamples;
+package AlgorithmSamples.String;
 
 import java.util.Arrays;
 

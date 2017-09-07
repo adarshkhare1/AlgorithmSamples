@@ -1,4 +1,4 @@
-package AlgorithmSamples;
+package AlgorithmSamples.LinkedList;
 
 import java.util.LinkedList;
 import java.util.ListIterator;

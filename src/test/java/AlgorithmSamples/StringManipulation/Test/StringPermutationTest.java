@@ -1,6 +1,6 @@
-package StringManipulation.Test;
+package AlgorithmSamples.StringManipulation.Test;
 
-import AlgorithmSamples.StringManipulation;
+import AlgorithmSamples.String.StringManipulation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
